@@ -7,6 +7,7 @@
     <meta name="description" content="PWA that uses machine learning to put emojis in body parts, because ... why not? ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -31,6 +32,15 @@
 </div>
 
 <script src="js/emojibody.js"></script>
+<script>
+    // Register service Worker
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('js/pwa.js')
+            .then(function() {
+                console.log('Service Worker Registered');
+            });
+    }
+</script>
 
 </body>
 </html>

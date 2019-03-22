@@ -1,0 +1,14 @@
+{
+  "name": "Emojiface PWA",
+  "short_name": "Emoji",
+  "icons": [{
+    "src": "img/emoji.png",
+    "sizes": "132x121",
+    "type": "image/png"
+  }],
+  "start_url": "/index.html",
+  "gcm_sender_id": "103953800507",
+  "display": "standalone",
+  "background_color": "#FF9800",
+  "theme_color": "#FF9800"
+}
